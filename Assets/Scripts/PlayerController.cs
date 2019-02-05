@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float maxSpeed = 4f;
-    float speed = 1f;
-    float jumpPower = 0.11f;
-    public bool onGround;
+    public float speed = 1f;
+    public float jumpPower = 0.11f;
+    [HideInInspector] public bool onGround;
     bool jump;
+    bool dJump;
+
     float horizontal;
 
     Animator animCtr;
@@ -23,9 +25,22 @@ public class PlayerController : MonoBehaviour {
 	
 
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space) && onGround)
+        if (onGround) //Salto de precaucion al caer
         {
-            jump = true;
+            dJump = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (onGround)
+            {
+                jump = true;
+                dJump = true;
+            }
+            else if (dJump) //doble salto
+            {
+                jump = true;
+                dJump = false;
+            }
         }
 
         
@@ -55,7 +70,7 @@ public class PlayerController : MonoBehaviour {
         if(jump)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
-            rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpPower);
             jump = false;
             
         }

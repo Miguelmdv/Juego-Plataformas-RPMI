@@ -64,10 +64,11 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Drawline.cs" />
     <Compile Include="Assets\Scripts\IfGround.cs" />
+    <Compile Include="Assets\Scripts\PlatformFall.cs" />
     <Compile Include="Assets\Scripts\PlatformMov.cs" />
-    <Compile Include="Assets\Scripts\Player\CharacterController2D.cs" />
-    <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\prueba\CharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\prueba\Player.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>J:/GAJEI 1.1/Programacion/Unity/Juego-Plataformas-RPMI/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
