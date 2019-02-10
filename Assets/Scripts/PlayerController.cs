@@ -15,12 +15,14 @@ public class PlayerController : MonoBehaviour {
 
     Animator animCtr;
     Rigidbody2D rb;
+    SpriteRenderer spr;
 
 
 
 	void Start () {
         rb = gameObject.GetComponent<Rigidbody2D>();
         animCtr = gameObject.GetComponent<Animator>();
+        spr = gameObject.GetComponent<SpriteRenderer>();
     }
 	
 
@@ -54,11 +56,12 @@ public class PlayerController : MonoBehaviour {
         if (onGround)
         {
             rb.velocity = fixedVel;
-        } 
+        }
         //}
 
-
+        
         horizontal = Input.GetAxis("Horizontal");
+
         rb.AddForce(Vector2.right * speed * horizontal, ForceMode2D.Force);
 
         SetWalkAnim();
@@ -76,7 +79,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    void SetWalkAnim()
+    void SetWalkAnim() //Animacion de andar
     {
         if (horizontal != 0 && onGround)
         {
@@ -88,7 +91,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    void FlipSprite()
+    void FlipSprite() //Dar la vuelta al sprite segun la direccion
     {
         if (horizontal > 0.1f)
         {
@@ -100,14 +103,36 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    void ClampearVel()
+    void ClampearVel()  //limitar velocidad
     {
         float speedClamped = Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed);
         rb.velocity = new Vector2(speedClamped, rb.velocity.y);
     }
 
-    private void OnBecameInvisible()
+    private void OnBecameInvisible() //fuera de la camara
     {
         transform.position = new Vector3(-5.69f, -1.36f, 0f);
+    }
+    public void EnemyJump()
+    {
+        jump = true;
+    }
+
+    public void EnemyKnockBack(float enemyPosX)
+    {
+        jump = true;
+
+        float side = Mathf.Sign(enemyPosX - transform.position.x);
+        rb.AddForce(Vector2.left * jumpPower * side * 2, ForceMode2D.Impulse);
+
+        Invoke("EnableColor", 1f);
+
+        Color miColor = new Color(255/255f, 106/255f, 0/255f); //color personalizado rgb pero se necesitan valores tanto por 1.
+        spr.color = miColor;
+    }
+
+    void EnableColor()
+    {
+        spr.color = Color.white;
     }
 }

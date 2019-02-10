@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Drawline.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\IfGround.cs" />
     <Compile Include="Assets\Scripts\PlatformFall.cs" />
     <Compile Include="Assets\Scripts\PlatformMov.cs" />

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlatformFall : MonoBehaviour {
 
     Rigidbody2D rb;
-    BoxCollider2D collider;
+    BoxCollider2D col;
 
     public float fallDelay = 1f;
     public float respawnDelay = 5f;
@@ -14,7 +14,7 @@ public class PlatformFall : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
-        collider = GetComponent<BoxCollider2D>();
+        col = GetComponent<BoxCollider2D>();
         posIni = transform.position;
 	}
 	
@@ -35,7 +35,7 @@ public class PlatformFall : MonoBehaviour {
     void Fall()
     {
         rb.isKinematic = false;  //la plataforma cae por fisicas
-        collider.isTrigger = true; //Cuando se activa trigger desactiva las colisiones
+        col.isTrigger = true; //Cuando se activa trigger desactiva las colisiones
     }
 
     void Respawn() 
@@ -43,6 +43,6 @@ public class PlatformFall : MonoBehaviour {
         transform.position = posIni;
         rb.isKinematic = true;
         rb.velocity = Vector3.zero;
-        collider.isTrigger = false;
+        col.isTrigger = false;
     }
 }
