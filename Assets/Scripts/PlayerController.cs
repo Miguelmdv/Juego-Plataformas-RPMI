@@ -27,6 +27,42 @@ public class PlayerController : MonoBehaviour {
 	
 
 	void Update () {
+
+        horizontal = Input.GetAxis("Horizontal");
+
+        Jump();
+
+        SetWalkAnim();
+
+        FlipSprite();
+    }
+
+    private void FixedUpdate()
+    {
+        //evitar deslizamiento por el material {
+        Vector3 fixedVel = rb.velocity;
+        fixedVel.x *= 0.75f;
+        if (onGround)
+        {
+            rb.velocity = fixedVel;
+        }
+        //}
+
+        rb.AddForce(Vector2.right * speed * horizontal, ForceMode2D.Force);
+
+        ClampearVel();
+
+        if(jump)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            rb.AddForce(Vector2.up * jumpPower);
+            jump = false;
+            
+        }
+    }
+
+    void Jump()
+    {
         if (onGround) //Salto de precaucion al caer
         {
             dJump = true;
@@ -43,39 +79,6 @@ public class PlayerController : MonoBehaviour {
                 jump = true;
                 dJump = false;
             }
-        }
-
-        
-    }
-
-    private void FixedUpdate()
-    {
-        //evitar deslizamiento por el material {
-        Vector3 fixedVel = rb.velocity;
-        fixedVel.x *= 0.75f;
-        if (onGround)
-        {
-            rb.velocity = fixedVel;
-        }
-        //}
-
-        
-        horizontal = Input.GetAxis("Horizontal");
-
-        rb.AddForce(Vector2.right * speed * horizontal, ForceMode2D.Force);
-
-        SetWalkAnim();
-
-        FlipSprite();
-
-        ClampearVel();
-
-        if(jump)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-            rb.AddForce(Vector2.up * jumpPower);
-            jump = false;
-            
         }
     }
 
