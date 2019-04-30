@@ -16,13 +16,15 @@ public class PlayerController : MonoBehaviour {
     Animator animCtr;
     Rigidbody2D rb;
     SpriteRenderer spr;
+    [SerializeField] BoxCollider2D collAttack;
 
 
 
 	void Start () {
-        rb = gameObject.GetComponent<Rigidbody2D>();
-        animCtr = gameObject.GetComponent<Animator>();
-        spr = gameObject.GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+        animCtr = GetComponent<Animator>();
+        spr = GetComponent<SpriteRenderer>();
+        
     }
 	
 
@@ -32,10 +34,13 @@ public class PlayerController : MonoBehaviour {
 
         Jump();
 
+        SetJumpAnim();
         SetWalkAnim();
 
         FlipSprite();
+        SetAttack();
     }
+
 
     private void FixedUpdate()
     {
@@ -47,6 +52,7 @@ public class PlayerController : MonoBehaviour {
             rb.velocity = fixedVel;
         }
         //}
+        Debug.Log(rb.velocity);
 
         rb.AddForce(Vector2.right * speed * horizontal, ForceMode2D.Force);
 
@@ -60,6 +66,7 @@ public class PlayerController : MonoBehaviour {
             
         }
     }
+
 
     void Jump()
     {
@@ -82,6 +89,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+
     void SetWalkAnim() //Animacion de andar
     {
         if (horizontal != 0 && onGround)
@@ -94,17 +102,45 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    void SetJumpAnim(){  //Animacion de salto y caida
+        animCtr.SetFloat("Jump", rb.velocity.y);
+        if (onGround)
+            animCtr.SetBool("Ground", true);
+        else
+            animCtr.SetBool("Ground", false);
+    }
+
+
+    void SetAttack() // animacion de ataque
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            animCtr.SetTrigger("Attack");
+            collAttack.enabled = true;
+        }
+    }
+
+
+    void FinishAttack()
+    {
+        collAttack.enabled = false;
+    }
+
+
+
+
     void FlipSprite() //Dar la vuelta al sprite segun la direccion
     {
         if (horizontal > 0.1f)
         {
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
         }
-        if (horizontal < -0.1f)
+        else if (horizontal < -0.1f)
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            transform.localScale = new Vector3(-0.2f, 0.2f, 0.2f);
         }
     }
+
 
     void ClampearVel()  //limitar velocidad
     {
@@ -116,10 +152,13 @@ public class PlayerController : MonoBehaviour {
     {
         transform.position = new Vector3(-5.69f, -1.36f, 0f);
     }
+
+
     public void EnemyJump()
     {
         jump = true;
     }
+
 
     public void EnemyKnockBack(float enemyPosX)
     {
@@ -133,6 +172,7 @@ public class PlayerController : MonoBehaviour {
         Color miColor = new Color(255/255f, 106/255f, 0/255f); //color personalizado rgb pero se necesitan valores tanto por 1.
         spr.color = miColor;
     }
+
 
     void EnableColor()
     {
