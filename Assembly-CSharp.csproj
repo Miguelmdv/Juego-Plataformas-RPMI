@@ -75,11 +75,11 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>J:/GAJEI 1.1/Programacion/Unity/Juego-Plataformas-RPMI/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>J:/GAJEI 1.1/Programacion/Unity/Juego-Plataformas-RPMI/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>J:/GAJEI 1.1/Programacion/Unity/Juego-Plataformas-RPMI/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>J:/GAJEI 1.1/Programacion/Unity/Juego-Plataformas-RPMI/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>J:/GAJEI 1.1/Programacion/Unity/Juego-Plataformas-RPMI/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>

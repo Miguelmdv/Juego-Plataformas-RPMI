@@ -3494,14 +3494,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathPLAYER
       objectReference: {fileID: 0}
-    - target: {fileID: 1564505407426806, guid: e04aebc2c5094304daa49c67f352e948, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1564505407426806, guid: e04aebc2c5094304daa49c67f352e948, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4572349880157694, guid: e04aebc2c5094304daa49c67f352e948, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.36
@@ -3534,8 +3526,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1861725737131706, guid: e04aebc2c5094304daa49c67f352e948, type: 3}
-      propertyPath: m_Layer
+    - target: {fileID: 4572349880157694, guid: e04aebc2c5094304daa49c67f352e948, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572349880157694, guid: e04aebc2c5094304daa49c67f352e948, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572349880157694, guid: e04aebc2c5094304daa49c67f352e948, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

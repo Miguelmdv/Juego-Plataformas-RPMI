@@ -9,7 +9,6 @@ public class UIController : MonoBehaviour
 {
     [SerializeField] GameObject main, options;
     [SerializeField] AudioMixer master;
-    [SerializeField] Dropdown graphicsSel;
     [SerializeField] Dropdown resolutionSel;
     List<string> myList = new List<string>();
 
@@ -57,13 +56,6 @@ public class UIController : MonoBehaviour
 
     //--------------------------------
     //Graphics
-
-    public void SetGraphics(int index)
-    {
-        QualitySettings.SetQualityLevel(index);
-        graphicsSel.value = index;
-        graphicsSel.RefreshShownValue();
-    }
 
     public void CheckScreen(bool check)
     {
