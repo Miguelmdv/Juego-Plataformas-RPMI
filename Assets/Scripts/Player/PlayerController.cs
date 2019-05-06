@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour {
         FlipSprite();
         SetAttack();
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)) // menu de pausa
         {
             pause = !pause;
             pauseMenu.SetActive(pause);
@@ -77,7 +77,6 @@ public class PlayerController : MonoBehaviour {
             rb.velocity = fixedVel;
         }
         //}
-        Debug.Log(rb.velocity);
 
         rb.AddForce(Vector2.right * speed * horizontal, ForceMode2D.Force);
 

@@ -7,39 +7,35 @@ using UnityEngine.Audio;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] GameObject main, options;
     [SerializeField] AudioMixer master;
     [SerializeField] Dropdown resolutionSel;
-    List<string> myList = new List<string>();
 
+    List<string> myList = new List<string>();
     Resolution[] myRes;
+
+    [SerializeField] GameObject player;
+    PlayerController pScript;
 
     private void Start()
     {
-        myRes = Screen.resolutions;
+        if(player != null)
+            pScript = player.GetComponent<PlayerController>();
 
-        foreach (Resolution res in myRes)
+        if (resolutionSel != null)
         {
-            myList.Add(res.ToString());
+            myRes = Screen.resolutions;
+            foreach (Resolution res in myRes)
+            {
+                myList.Add(res.ToString());
+            }
+            resolutionSel.AddOptions(myList);
         }
-        resolutionSel.AddOptions(myList);
     }
 
-    public void Options()
-    {
-        main.SetActive(false);
-        options.SetActive(true);
-    }
-
-    public void BackMain()
-    {
-        main.SetActive(true);
-        options.SetActive(false);
-    }
 
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void OnApplicationQuit()
@@ -47,11 +43,35 @@ public class UIController : MonoBehaviour
         Application.Quit();
     }
 
+    public void BackButtom()
+    {
+        if (pScript.pause)
+        {
+            Time.timeScale = 1;
+            pScript.pause = !pScript.pause;
+        }
+        SceneManager.LoadScene(1);
+    }
+
+    public void Resume()
+    {
+
+
+        pScript.pause = !pScript.pause;
+        pScript.pauseMenu.SetActive(pScript.pause);
+        if (pScript.pause)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
+
+    }
+
     //--------------------------------
     //AUDIO
     public void ControlVolume(float volume)
     {
         master.SetFloat("Volume", volume);
+        Debug.Log(volume);
     }
 
     //--------------------------------
@@ -67,6 +87,25 @@ public class UIController : MonoBehaviour
         Screen.SetResolution(myRes[index].width, myRes[index].height, Screen.fullScreen);
         resolutionSel.value = index;
         resolutionSel.RefreshShownValue();
+    }
+
+    //--------------------------------
+    //Save & Load
+
+    public void Save()
+    {
+        PlayerPrefs.SetFloat("ejeX", player.transform.position.x);
+        PlayerPrefs.SetFloat("ejeY", player.transform.position.y);
+        Debug.Log(PlayerPrefs.GetFloat("ejeX", 0));
+        Debug.Log(PlayerPrefs.GetFloat("ejeY", 0));
+    }
+
+    public void Load()
+    {
+        player.transform.position = new Vector2(
+            PlayerPrefs.GetFloat("ejeX", 0),
+            PlayerPrefs.GetFloat("ejeY", 0));
+
     }
 
 
