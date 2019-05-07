@@ -1,0 +1,813 @@
+fileFormatVersion: 2
+guid: aa7d2ab3788b8224998deb0b0bcf615f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: npc_butterfly__x1_fly-angle1_png_1354829526_0
+    21300002: npc_butterfly__x1_fly-angle1_png_1354829526_1
+    21300004: npc_butterfly__x1_fly-angle1_png_1354829526_2
+    21300006: npc_butterfly__x1_fly-angle1_png_1354829526_3
+    21300008: npc_butterfly__x1_fly-angle1_png_1354829526_4
+    21300010: npc_butterfly__x1_fly-angle1_png_1354829526_5
+    21300012: npc_butterfly__x1_fly-angle1_png_1354829526_6
+    21300014: npc_butterfly__x1_fly-angle1_png_1354829526_7
+    21300016: npc_butterfly__x1_fly-angle1_png_1354829526_8
+    21300018: npc_butterfly__x1_fly-angle1_png_1354829526_9
+    21300020: npc_butterfly__x1_fly-angle1_png_1354829526_10
+    21300022: npc_butterfly__x1_fly-angle1_png_1354829526_11
+    21300024: npc_butterfly__x1_fly-angle1_png_1354829526_12
+    21300026: npc_butterfly__x1_fly-angle1_png_1354829526_13
+    21300028: npc_butterfly__x1_fly-angle1_png_1354829526_14
+    21300030: npc_butterfly__x1_fly-angle1_png_1354829526_15
+    21300032: npc_butterfly__x1_fly-angle1_png_1354829526_16
+    21300034: npc_butterfly__x1_fly-angle1_png_1354829526_17
+    21300036: npc_butterfly__x1_fly-angle1_png_1354829526_18
+    21300038: npc_butterfly__x1_fly-angle1_png_1354829526_19
+    21300040: npc_butterfly__x1_fly-angle1_png_1354829526_20
+    21300042: npc_butterfly__x1_fly-angle1_png_1354829526_21
+    21300044: npc_butterfly__x1_fly-angle1_png_1354829526_22
+    21300046: npc_butterfly__x1_fly-angle1_png_1354829526_23
+    21300048: npc_butterfly__x1_fly-angle1_png_1354829526_24
+    21300050: npc_butterfly__x1_fly-angle1_png_1354829526_25
+    21300052: npc_butterfly__x1_fly-angle1_png_1354829526_26
+    21300054: npc_butterfly__x1_fly-angle1_png_1354829526_27
+    21300056: npc_butterfly__x1_fly-angle1_png_1354829526_28
+    21300058: npc_butterfly__x1_fly-angle1_png_1354829526_29
+    21300060: npc_butterfly__x1_fly-angle1_png_1354829526_30
+    21300062: npc_butterfly__x1_fly-angle1_png_1354829526_31
+    21300064: npc_butterfly__x1_fly-angle1_png_1354829526_32
+    21300066: npc_butterfly__x1_fly-angle1_png_1354829526_33
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 138
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588f98a0495e2634f84fe75a8d64fa7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 137
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a73ecb81c696174493959a1515957d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 136
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25731aca965a1344e9d199a4e641e5ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 134
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cf965086b745c46aea866f7f35122b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_4
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 132
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a07eeb3fe6bf94094094e822498bef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_5
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 131
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e23c8bd1416c0a48a7263cda7bdead5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_6
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 132
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d65ffa5dedc08438a2587a0967961f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_7
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 134
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f506aaafcbef0c4fa3b3d192789e793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_8
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 136
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e4a6354f92f1048a7930b9791a48a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_9
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 137
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74aa56177b0e1804984b3ed85957dc28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_10
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 136
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1506e02628471e438dd4949227af309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_11
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 134
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c05f98ac47259408ae39c5251fe09c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_12
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 67
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b33006e718b0d4a85ff30ee1735fe7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 66
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ccfcbc96b8f5942b518ed344546d2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_14
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 67
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a9b45f83a35e442810c596083a0428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_15
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 69
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f470f95dcebcd7478208223dbea4d2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_16
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 71
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683b9a68068d7c34786d6406d71a9f32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_17
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 72
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0d84ef1d22f1f4fbe7391b064732a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_18
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 73
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e96c9f9b445ac42ace1e7be78b80d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_19
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 74
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcacc8e7179262b4a834d7c946ad2846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_20
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 74
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b0d6e9a95684f4bb777b4744e75a99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_21
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 74
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66b7d1de657ded4d9b9b366f8911bea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_22
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 75
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c048adef03d5c4c92d11c999546a11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_23
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 75
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfb07a66493db14c9b9bfbf3b47277d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_24
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 9
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def79e50f667a714ca7b4aefb81f0e64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_25
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 8
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605412712b9902d47b18495158d41028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_26
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 6
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a296bebdd6aed4a8b6547b0e0ffed9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_27
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 4
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4439162d6150fb04fa50df150eebac3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_28
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 2
+        width: 43
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b930a4f928ceb46b19e83677eefec4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_29
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2b3d00ad9bcb14cb8b354a94802b01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_30
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 3
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee6c9bfa702d1f4bb24f3b8d8322c05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_31
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 5
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b280f67adf4d84ba611b102964c15d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_32
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 6
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f939fd0065dfeff489833e0074511a73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_butterfly__x1_fly-angle1_png_1354829526_33
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 7
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b64508e4a77e91419496ba8ce1cd22d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8dbf83ff245991346b9edf5bf103fa67
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
