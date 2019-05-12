@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerController : MonoBehaviour {
 
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 
     public bool pause = false;
     public GameObject retry, pauseMenu;
+    [SerializeField] AudioMixerSnapshot[] snapshot;
 
 
 
@@ -60,9 +62,15 @@ public class PlayerController : MonoBehaviour {
             pause = !pause;
             pauseMenu.SetActive(pause);
             if (pause)
+            {
                 Time.timeScale = 0;
+                snapshot[1].TransitionTo(0);
+            }
             else
+            {
                 Time.timeScale = 1;
+                snapshot[0].TransitionTo(0);
+            }
         }
     }
 

@@ -7,7 +7,7 @@ using UnityEngine.Audio;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] AudioMixer master;
+    [SerializeField] AudioMixer myMixer;
     [SerializeField] Dropdown resolutionSel;
 
     List<string> myList = new List<string>();
@@ -15,6 +15,7 @@ public class UIController : MonoBehaviour
 
     [SerializeField] GameObject player;
     PlayerController pScript;
+    [SerializeField] AudioMixerSnapshot[] snapshot;
 
     private void Start()
     {
@@ -48,6 +49,7 @@ public class UIController : MonoBehaviour
         if (pScript.pause)
         {
             Time.timeScale = 1;
+            snapshot[0].TransitionTo(0);
             pScript.pause = !pScript.pause;
         }
         SceneManager.LoadScene(1);
@@ -60,18 +62,31 @@ public class UIController : MonoBehaviour
         pScript.pause = !pScript.pause;
         pScript.pauseMenu.SetActive(pScript.pause);
         if (pScript.pause)
+        {
             Time.timeScale = 0;
+            snapshot[1].TransitionTo(0);
+        }
         else
+        {
             Time.timeScale = 1;
+            snapshot[0].TransitionTo(0);
+        }
 
     }
 
     //--------------------------------
     //AUDIO
-    public void ControlVolume(float volume)
+    public void ControlVolumeMaster(float volume)
     {
-        master.SetFloat("Volume", volume);
-        Debug.Log(volume);
+        myMixer.SetFloat("VolumeMaster", volume);
+    }
+    public void ControlVolumeMusic(float volume)
+    {
+        myMixer.SetFloat("VolumeMusic", volume);
+    }
+    public void ControlVolumeSFX(float volume)
+    {
+        myMixer.SetFloat("VolumeSFX", volume);
     }
 
     //--------------------------------
