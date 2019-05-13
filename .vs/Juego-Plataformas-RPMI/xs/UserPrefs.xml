@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{39B9C30C-1AD9-5CCA-1EBD-8A4B1D0C0F9C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menu/UIController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Menu/UIController.cs" Line="54" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

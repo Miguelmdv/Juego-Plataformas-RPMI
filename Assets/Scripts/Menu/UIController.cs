@@ -16,6 +16,8 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject player;
     PlayerController pScript;
     [SerializeField] AudioMixerSnapshot[] snapshot;
+    AudioSource audioSource;
+
 
     private void Start()
     {
@@ -31,16 +33,25 @@ public class UIController : MonoBehaviour
             }
             resolutionSel.AddOptions(myList);
         }
+
+        audioSource = GetComponent<AudioSource>();
+
+
     }
 
 
     public void Play()
     {
+
+        audioSource.Play();
         SceneManager.LoadScene(0);
+
+
     }
 
     public void OnApplicationQuit()
     {
+
         Application.Quit();
     }
 
@@ -99,6 +110,7 @@ public class UIController : MonoBehaviour
     }
     public void SetResolution(int index)
     {
+
         Screen.SetResolution(myRes[index].width, myRes[index].height, Screen.fullScreen);
         resolutionSel.value = index;
         resolutionSel.RefreshShownValue();
